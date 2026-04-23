@@ -6,3 +6,18 @@ function getComputerChoice() {
 }
 
 console.log(getComputerChoice());
+
+function getHumanChoice() {
+    const question = prompt("Schere, Stein oder Papier?");
+    return question
+   
+}
+
+console.log(getHumanChoice());
+
+let humanScore = 0;
+let computerScore = 0;
+
+function playRound(humanChoice, computerChoice) {
+
+}
