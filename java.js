@@ -1,3 +1,5 @@
+
+
 const wordList = ["Schere", "Stein", "Papier"];
 
 function getComputerChoice() {
@@ -12,17 +14,10 @@ function getHumanChoice() {
 }
 
 function playGame() {
-    let count = 0;
     let humanScore = 0;
     let computerScore = 0;
 
-    for (count = 0; count < 5; count++) {
-        count += 1;
-    }
-
 function playRound(humanChoice, computerChoice) {
-
-    computerChoice === computerChoice.toLowerCase();
 
     if (humanChoice === computerChoice){
         console.log("Unentschieden!");
@@ -43,15 +38,26 @@ function playRound(humanChoice, computerChoice) {
         computerScore++;
         console.log("ComputerScore:", + computerScore);
     }
+
+    console.log(`Score: Du ${humanScore} - ${computerScore} Computer`);
 }
 
-const humanSelection = getHumanChoice();
-const computerSelection = getComputerChoice();
 
-console.log("Du:", humanSelection);
-console.log("Computer:", computerSelection);
+playRound(getHumanChoice(), getComputerChoice());
+playRound(getHumanChoice(), getComputerChoice());
+playRound(getHumanChoice(), getComputerChoice());
+playRound(getHumanChoice(), getComputerChoice());
+playRound(getHumanChoice(), getComputerChoice());
 
-playRound(humanSelection, computerSelection);
+console.log(" -- Spiel beendet --");
+
+if (humanScore > computerScore) {
+    console.log("Glückwünsch du hast gewonnen!");
+} else if (humanScore < computerScore) {
+    console.log("Schade du hast verloren!");
+} else  {
+    console.log("Leider Unentschieden!");
+}
 
 }
 
