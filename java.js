@@ -11,8 +11,14 @@ function getHumanChoice() {
    
 }
 
-let humanScore = 0;
-let computerScore = 0;
+function playGame() {
+    let count = 0;
+    let humanScore = 0;
+    let computerScore = 0;
+
+    for (count = 0; count < 5; count++) {
+        count += 1;
+    }
 
 function playRound(humanChoice, computerChoice) {
 
@@ -46,3 +52,7 @@ console.log("Du:", humanSelection);
 console.log("Computer:", computerSelection);
 
 playRound(humanSelection, computerSelection);
+
+}
+
+playGame();
