@@ -54,7 +54,7 @@ console.log(" -- Spiel beendet --");
 if (humanScore > computerScore) {
     console.log("Glückwünsch du hast gewonnen!");
 } else if (humanScore < computerScore) {
-    console.log("Schade du hast verloren!");
+    console.log("Computer hat gewonnen!!");
 } else  {
     console.log("Leider Unentschieden!");
 }
