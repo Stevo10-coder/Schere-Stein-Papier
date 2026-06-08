@@ -1,0 +1,28 @@
+
+.container {
+    height: 300px;
+    background-color: rgb(32, 32, 32);
+    color: white;
+    box-sizing: border-box;
+    align-items: center;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+}
+
+#score {
+    margin: 12px 0px;
+}
+
+.button-Group {
+    display: flex;
+    flex-direction: row;
+    gap: 15px;
+}
+
+#Schere, #Stein, #Papier {
+    padding: 5px 20px;
+}
+
